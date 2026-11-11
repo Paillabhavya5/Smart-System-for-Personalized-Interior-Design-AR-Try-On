@@ -318,8 +318,18 @@ function App() {
             </div>
 
             <div className="panel">
-              <h3>3D preview</h3>
-              {resultImage ? <ThreeShowcase imageUrl={resultImage} width={640} height={420} isDarkMode={isDarkMode} /> : <div className="placeholder-3d">Generate a redesign to preview the concept in 3D.</div>}
+              <h3>3D furniture planner</h3>
+              <p className="planner-description">
+                Arrange furniture in a room layout. This interactive 3D plan is editable and separate from the AI photo result.
+              </p>
+              <ThreeShowcase
+                roomType={roomType}
+                backgroundColor={backgroundColor}
+                foregroundColor={foregroundColor}
+                width={640}
+                height={420}
+                isDarkMode={isDarkMode}
+              />
             </div>
           </section>
 

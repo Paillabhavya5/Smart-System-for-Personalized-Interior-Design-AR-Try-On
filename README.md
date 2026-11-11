@@ -22,7 +22,8 @@ No explicit software license was found in the reference repository metadata. Thi
 - Detect room type and furniture objects
 - Choose style, room type, and palette
 - Generate AI-assisted redesign output
-- View before/after comparison and 3D preview
+- View before/after comparison and an interactive 3D furniture planner
+- Add, remove, and drag furniture items in room-specific starter layouts
 - Save designs to SQLite and browse previous sessions
 - Health endpoint and structured API responses
 
@@ -64,6 +65,7 @@ FRONTEND_PORT=5173
 ## Testing notes
 - The AI redesign path is enabled when a valid Gemini key is configured.
 - When no Gemini key is available, the system falls back to the original image with recommendations in a clearly labeled mode.
+- The 3D furniture planner is a procedural, editable layout preview; it is not a reconstruction of the uploaded photo and its edits are not saved to design history.
 - Room classification uses a ResNet18 ImageNet-based fallback because a Places365 checkpoint is not guaranteed to be present or legally bundled.
 
 ## Deployment
