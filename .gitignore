@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+*.sqlite3
+*.db
+*.pt
+*.pth
+
+# Node
+node_modules/
+dist/
+build/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project data
+backend/uploads/*
+backend/generated/*
+!backend/uploads/.gitkeep
+!backend/generated/.gitkeep
